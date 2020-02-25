@@ -1,0 +1,8 @@
+<h1>All Events</h1>
+
+<!-- use the __ without equal when you don't want result to print to hmtl page -->
+
+ <% for event in @events %>
+    <p><a href="/events/<%= event[:id] %>"><%= event[:title] %></a></p>
+        <!-- use to __ pull in ruby that you want to print on HTML page. must use colon in brackets to pull in key -->
+ <% end %>
